@@ -1,0 +1,140 @@
+.add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.add__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: --var(--color_2);
+}
+
+.add__form {
+  margin-top: 24px;
+  max-width: 658px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add__form > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form__top,
+.form__phone-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 21px;
+}
+
+.form__top label,
+.form__email label,
+.form__phone-date label,
+.form__address label,
+.form__user-icon label,
+.form__password label,
+.form__username label,
+.form__role label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form__radio {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px 56px;
+}
+
+.form__radio .error {
+  flex: 1 0 100%;
+}
+
+.form__radio label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.form__user-icon input {
+  display: none;
+}
+
+.user-icon__field {
+  min-height: 40px;
+  padding: 8px;
+  background: var(--color_3);
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-icon__field svg {
+  cursor: pointer;
+}
+
+.content__file-actions {
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.content__file-actions div {
+  display: flex;
+  gap: 15px;
+}
+
+.content__file-actions img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+
+.form__password {
+  position: relative;
+}
+
+.form__password button {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+}
+
+.form__btn {
+  align-self: center;
+}
+
+.error {
+  color: #f00;
+}
+
+.img_container {
+  width: 128px;
+  height: 128px;
+  position: relative;
+  margin-right: 24px;
+  margin-bottom: 12px;
+  /* border-radius: 50%; */
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  cursor: pointer;
+}
+.img_container img {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

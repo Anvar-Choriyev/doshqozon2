@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* justify-content: center; */
+  align-items: center;
+}
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 850px) {
+  .mainContainer {
+    display: block;
+  }
+}

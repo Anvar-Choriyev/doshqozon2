@@ -1,0 +1,73 @@
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: calc(60 / 40);
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: calc(24 / 20);
+}
+
+.main-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: calc(24 / 16);
+}
+
+.name-text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: calc(36 / 24);
+}
+
+.light {
+  color: var(--color_4);
+}
+
+.active {
+  background-color: var(--color_2);
+}
+
+.settings .active {
+  background-color: transparent;
+  color: var(--color_1);
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.colored-scroll {
+  overflow-y: auto;
+}
+
+.colored-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.colored-scroll::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: var(--color_2);
+}
+
+.colored-scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 2px 6px var(--color_4);
+}
+.auto-scroll {
+  overflow-y: auto;
+}
+
+.rotated90 {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 500px) {
+  .grid-container {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,33 @@
+.layout {
+	/* flex:1 1 auto; */
+	display: flex;
+	height: 100vh;
+
+	max-width: 100%;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.layout__right {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	padding: 40px 20px 0 20px;
+	overflow: auto;
+}
+
+.layout__child {
+	flex: 1 1 auto;
+	height: 100%;
+	/* overflow-y: scroll; */
+	display: flex;
+	flex-direction: column;
+}
+
+.layout__child>h1 {
+	margin-bottom: 24px;
+}
+
+.layout__end {
+	display: flex;
+}

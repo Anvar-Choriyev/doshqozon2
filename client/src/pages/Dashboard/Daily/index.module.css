@@ -1,0 +1,10 @@
+
+.daily{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 19px;
+}
+h3.daily-title{
+    font-weight: 600;
+}

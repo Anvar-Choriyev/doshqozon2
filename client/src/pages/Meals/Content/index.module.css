@@ -1,0 +1,133 @@
+.content {
+    padding: 80px 32px 56px 32px;
+    position: relative;
+}
+
+.content__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.content__title {
+    color: var(--color_1);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.content__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__form>*:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.content__fields-wrapper {
+    max-height: 470px;
+    padding-right: 8px;
+    padding-bottom: 20px;
+}
+
+.content__fields-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content__fields-block:not(:last-child) {
+    margin-bottom: 70px;
+}
+
+.content__fields-block>* {
+    flex: 1 0 239px;
+}
+
+.content__label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.content__label input[type="color"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    height: 3em;
+    padding: 0;
+    width: 3em;
+}
+
+.content__label span {
+    font-size: 14px;
+}
+
+.content__add-btns-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.content__add-btn-righted {
+    margin-left: auto;
+}
+
+.content__submit-btn {
+    color: var(--color_1);
+    align-self: center;
+}
+
+.content__btn-delete {
+    transform: translateY(100%);
+    max-width: 50px;
+}
+
+.content__file {
+    min-height: 40px;
+    background: var(--color_3);
+    border-radius: 4px;
+    gap: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.content__file img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.content__file input {
+    display: none;
+}
+
+
+.content__file-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.error {
+    color: #ff0000c7;
+}
+
+.space {
+    padding: 10px 5px;
+}
+
+@media(min-width:655px) {
+    .content__file {
+        transform: translateY(0px);
+    }
+
+    .content__btn-delete {
+        transform: translateY(0);
+    }
+}

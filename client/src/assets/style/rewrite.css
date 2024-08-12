@@ -1,0 +1,16 @@
+.re-left {
+    transform: translateX(-25px);
+}
+
+
+:where(.css-dev-only-do-not-override-9ntgx0).ant-dropdown .ant-dropdown-menu,
+:where(.css-dev-only-do-not-override-9ntgx0).ant-dropdown-menu-submenu,
+.ant-dropdown-arrow::after,
+.ant-dropdown-arrow::before {
+    /* background: red !important; */
+    background: #F8F8F7 !important;
+}
+
+.ant-dropdown-menu {
+    padding: 12px !important;
+}

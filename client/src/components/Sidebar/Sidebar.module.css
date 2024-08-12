@@ -1,0 +1,160 @@
+.aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	background-color: var(--color_3);
+	padding: 20px;
+	position: relative;
+	transition: all 0.3s ease 0s;
+}
+
+.aside__menu {}
+
+.aside__list {}
+
+.aside__item {}
+
+.aside__item:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+.aside__link {
+	display: flex;
+	align-items: center;
+	gap: 0;
+
+	padding: 12px;
+	border-radius: 4px;
+}
+
+.aside__link p {
+	opacity: 0;
+	width: 0;
+	padding: 0;
+	margin: 0;
+	transition: all 0.3s ease-in 0s;
+}
+
+.aside__user {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 0px 16px 0px;
+	position: relative;
+}
+
+.aside__user>*:not(.aside__user-pic) {
+	display: none;
+}
+
+.aside__user-pic {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, -50%);
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.aside__user-pic img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.aside__user-title {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: calc(24/24);
+	margin-bottom: 4px;
+}
+
+.aside__user-desc {}
+
+.aside__user-btn {
+	margin-top: 36px;
+	transition: all 0.3s ease-in 0s;
+}
+
+.aside-hide button.hide-btn[type='button'] {
+	transform: translateX(50%) rotate(0deg);
+	transition: all 0.4s ease 0s;
+}
+
+button.hide-btn[type='button'] {
+	display: none;
+}
+
+.aside.aside-hide {
+	flex: 0 0 0;
+	transition: all 0.3s ease 0s;
+}
+
+.aside.aside-hide .aside__link p {
+	opacity: 0;
+	width: 0;
+	padding: 0;
+	margin: 0;
+	transition: all 0.3s ease 0s;
+}
+
+.aside.aside-hide .aside__link {
+	gap: 0;
+	transition: all 0.3s ease 0s;
+}
+
+.aside.aside-hide .aside__user {
+	background-color: transparent;
+}
+
+.aside-hide.aside .aside__user>*:not(.aside__user-pic) {
+	display: none;
+}
+
+@media(min-height:885px) {
+	.aside {
+		padding: 100px 20px 160px 20px;
+	}
+}
+
+@media(min-width:1120px) {
+	.aside__link {
+		gap: 12px;
+	}
+
+	.aside__link p {
+		opacity: 1;
+		width: auto;
+	}
+
+	.aside__user {
+		background-color: #fff;
+	}
+
+	.aside__user>*:not(.aside__user-pic) {
+		display: block;
+	}
+
+	button.hide-btn[type='button'] {
+		border-radius: 50%;
+		display: grid;
+		place-items: center;
+		position: absolute;
+		z-index: 1;
+		right: 0;
+		bottom: 25%;
+		transform: translateX(50%) rotate(-180deg);
+		transition: all 0.2s ease 0s;
+	}
+}
+
+@media(min-width:1276px) {
+	.aside {
+		flex: 0 0 355px;
+		transition: all 0.3s ease-in 0s;
+
+	}
+}

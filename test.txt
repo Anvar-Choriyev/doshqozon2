@@ -1,0 +1,8 @@
+1. /aynan biron bir category ga o'tganda consoleda shu "GET http://localhost:7070/img/undefined 404 (Not Found)" error chiqvotti 
+2. /ikkita odam admin bo'lib kirsa foydalanuvchi qo'shish button ni bosganda dashboard ga otvorvotti
+3. /foydalanuvchi qo'shishda gender ni validation ni english da bo'lib qolgan lekin local da uzb da.
+4. /taomlarni qidirishda muammo (search)
+5. foydalanuvchi qo'shganda va o'sha foydalanuvchi platfo'rmaga kirganda sidebarda da rasm chiqmayapti
+6. ikkita foydalanuvchi taom buyurtma qilganda birini qo'shgan taomlari ikkinichisiga ko'rinmayapti
+7. /validatsiyalar xato qo'yilgan userlarda frontendda minimal parol kiritish 4ta backda 6ta, user yaratilvotganda loginga 4ta harf kiritsaham qabul qilmoqda login pageda bolsa login hato kiritildi degan validatsiya chiqmoqda
+8. /user validatsiyasi frontendda ulanmagan usernameni bir xil kiritib qo'ysam xatolik chiqmayapti

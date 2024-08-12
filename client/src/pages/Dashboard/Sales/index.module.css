@@ -1,0 +1,44 @@
+.sales {
+    height: inherit;
+    position: relative;
+    padding-bottom: 50px;
+    overflow-y: auto;
+}
+
+.sales__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.sales__item {
+    margin-bottom: 20px;
+}
+
+.sales__item img {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.sales__item span {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    background-color: var(--color_2);
+}
+
+.sales__item p {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.sales__center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

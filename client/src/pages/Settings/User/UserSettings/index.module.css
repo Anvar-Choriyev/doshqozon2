@@ -1,0 +1,69 @@
+.user {
+    height: 100%;
+}
+.user__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: calc(48/32);
+    color: var(--color_1);
+    margin-bottom: 15px;
+}
+.user__form > *:not(:last-child) {
+    margin-bottom: 32px;
+}
+.user__form-radio {
+    display: flex;
+    gap: 56px;
+    padding: 24px 0;
+}
+.user__form-radio label {
+    font-weight: 600;
+    color: var(--color_1);
+}
+.user__form-radio span{
+    margin-right: 16px;
+}
+.user__form-info{
+    display: grid;
+    grid-template: 2fr / repeat(auto-fit, minmax(216px, 1fr));
+    gap:21px;
+    margin-bottom: auto;
+}
+.user__form-info label{
+    display: flex;
+    flex-direction:column;
+    gap:4px;
+}
+.user__form-info span{
+    font-size: 14px;
+    line-height: calc(24 / 14);
+}
+.user__form-info span.error{
+    color:#ff0000c7;
+}
+.user__btn{
+    justify-self: flex-end;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(24 / 16);
+}
+
+@media(min-width:991px) {
+    .user {
+        display: flex;
+        flex-direction:column;
+    }
+    .user__form{
+        flex:1 1 auto;
+        display: flex;
+        flex-direction:column;
+    }
+    .user__form-info{
+        grid-template: 2fr / repeat(2, minmax(216px, 1fr));
+    }
+    .user__btn{
+        align-self: center;
+        justify-self: flex-end;
+        width: 88.3%;
+    }
+}

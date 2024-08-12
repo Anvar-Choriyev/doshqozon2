@@ -1,0 +1,17 @@
+.category {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.category__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--color_1);
+}
+.category__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
