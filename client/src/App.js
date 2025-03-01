@@ -6,7 +6,6 @@ import { Fragment, useContext, useEffect } from "react";
 import AppContext from "./context/AppContext";
 import useUniqueId from "./hooks/useId";
 
-
 function App() {
 	const token = localStorage.getItem("token");
 	const user = localStorage.getItem("user");
